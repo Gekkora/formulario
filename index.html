@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Reserva Hora</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <body class="bg-light">
+        <div class="container my-5">
+            <h1 class="display-5 font-weight-bold mb-3">Centro Médico QWERTY</h1>
+            <hr>
+        </div>
+
+        <div class="container my-5">
+            <h3 class="display-5 font-weight-bold mb-3">Reserva de Horas Médicas</h3>
+            <hr>
+            <form action="" method="POST" id="formulario" onsubmit="return false;">
+                <!-- RUT -->
+                <div class="form-group">
+                    <label for="rut">RUT</label>
+                    <input type="text" class="form-control" id="rut">
+                    <div class="alert alert-danger my-2" role="alert" id="error_rut">
+                    </div>
+                </div>
+
+                <!-- NOMBRE -->
+                <div class="form-group">
+                    <label for="nombre">NOMBRE</label>
+                    <input type="text" class="form-control" id="nombre">
+                    <div class="alert alert-danger my-2" role="alert" id="error_nombre">
+                    </div>
+                </div>
+
+                <!-- APELLIDOS-->
+                <div class="form-group">
+                    <label for="apellidos">APELLIDOS</label>
+                    <input type="text" class="form-control" id="apellidos">
+                    <div class="alert alert-danger my-2" role="alert" id="error_apellidos">
+                    </div>
+                </div>
+
+                <!-- EDAD -->
+                <div class="form-group">
+                    <label for="edad">EDAD</label>
+                    <input type="text" class="form-control" id="edad">
+                    <div class="alert alert-danger my-2" role="alert" id="error_edad">
+                    </div>
+                </div>
+
+                <!-- EMAIL -->
+                <div class="form-group">
+                    <label for="email">EMAIL</label>
+                    <input type="text" class="form-control" id="email">
+                    <div class="alert alert-danger my-2" role="alert" id="error_email">
+                    </div>
+                </div>
+
+                <!-- ESPECIALIDAD-->
+                <div class="form-group">
+                    <label for="especialidad">ESPECIALIDAD</label>
+                    <select id="especialidad" > 
+                        <option value="0">Medicina General</option>
+                        <option value="1">Traumatología</option>
+                        <option value="2">Dermatología</option>  
+                    </select>
+                    <div class="alert alert-danger my-2" role="alert" id="error_especialidad"></div>
+                </div>
+
+                <!-- FECHAS -->
+                <div class="form-group">
+                    <label for="fechas">FECHAS (DD-MM-YYYY)</label>
+                    <input type="text" class="form-control" id="fechas">
+                    <div class="alert alert-danger my-2" role="alert" id="error_fechas">
+                    </div> 
+                </div>
+
+                <!-- HORAS-->
+                <div class="form-group">
+                    <label for="horas">HORAS</label>
+                    <select id="horas" > 
+                        <option value="0">08:00</option>
+                        <option value="1">08:30</option>
+                        <option value="2">09:00</option>
+                        <option value="3">09:30</option>
+                        <option value="4">10:00</option>  
+                        <option value="5">10:30</option>
+                        <option value="6">11:00</option>
+                        <option value="7">11:30</option>  
+                        <option value="8">12:00</option>
+                        <option value="9">12:30</option>
+                    </select>
+                    <div class="alert alert-danger my-2" role="alert" id="error_horas"></div>
+                </div>
+
+
+
+                <!-- BOTON RESERVA-->
+                <input type="submit" value="Enviar" id="boton" class="btn btn-primary">
+
+             
+            </form>
+
+
+
+
+ <!--            <div class="alert alert-secondary my-5" role="alert" id="alerta">
+                <h3>Información del Usuario</h3>
+                <hr>
+                <p id="p_nombre" class="font-weight-bold">
+                    Nombre: <span class="font-weight-light"></span>
+                </p>
+
+                <p id="p_apellidos" class="font-weight-bold">
+                    Apellidos: <span class="font-weight-light"></span>
+                </p>
+
+                <p id="p_edad" class="font-weight-bold">
+                    Edad: <span class="font-weight-light"></span>
+                </p>
+            </div>  -->
+        
+           
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+        <script src="jsmain.js"></script>
+    </body>
+
+</html>
